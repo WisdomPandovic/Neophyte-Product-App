@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-search {
+    background-color: #105A33;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.view-video{
+    border: 1px solid #105A33;
+    color: #105A33;
+}
+
+.bg-rare{
+    background-color: #105A33;
+}
+
+.about-brand h2{
+    font-size: 4em;
+    color: #000;
+}
+
+.about-brand p{
+    color: #838483;
+}
+
+.custom-width-section {
+    width: 80%;
+    margin: 0 auto; /* To center the section */
+}
+
+.custom-width-section-2 {
+    width: 60%;
+    margin: 0 auto; /* To center the section */
+}
+
+.about-bg {
+    background-image: url('./images/Neophyte-garment-images\ \(18\).jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.carousel-text {
+    position:relative;
+    top: 70px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: red; 
+    text-align: center;
+}
+
+.image-container {
+    height: 300px; 
+}
+
+.image-container img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.reco{
+    font-size: 4em;
+    line-height: 1;
+}
+
+.card-img-top {
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-img-top-2 {
+    height: 400px;
+    object-fit: cover;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: blue;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.price{
+    color: #838483;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+.product-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit, .delete {
+    display: inline-block;
+    margin: 5px;
+}
+
+.edit button, .delete button {
+    padding: 5px 10px;
+}
+
+.custom-add-to-cart {
+    background-color: white;
+    border: 1px solid black;
+    color: black; 
+    padding: 10px 40px;
+}
+
+.custom-width-section a{
+    text-decoration: none;
+}
+
+.custom-width-section-2 a{
+    text-decoration: none;
+}
+
+.card-text{
+    color: #000;
+}
+
+.fa-shopping-cart, .fa-user{
+    color: #838483;
+}
+
+.cart-delete{
+    background-color: red;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.product-image{
+    height: 300px;
+    object-fit: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.styled-section {
+    background-image: url('./images/Neophyte-garment-images\ \(7\).webp'); /* Replace 'your-background-image.jpg' with the actual image file path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* .styled-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+} */
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+.content h2{
+    font-size: 5em;
+}
+
+.black-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.in-store{
+    background-color: #A8BF95;
+}
+
+.best-sellers{
+    font-size: 2em;
+}
+
+.load-more-section {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.load-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.fab, .fas{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .about-brand h2 {
+        font-size: 2em;
+        color: #000;
+    }
+}
+
+@media (max-width: 643px) {
+
+    .reco{
+        font-size: 2em;
+        line-height: 1;
+    }
+}
