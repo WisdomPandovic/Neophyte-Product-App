@@ -21,7 +21,7 @@ function renderProducts(inStoreproduct) {
                 <option value="green">Green</option>
             </select>
         </div>
-        <button class="btn btn-primary btn-block addToCartBtn" data-product-id="${inStoreproduct._id}">Add to Cart</button>
+        <button class="btn btn-primary btn-block addToCartBtn" id="wish-lists">Add to Cart</button>
     </div>
     `;
 }
@@ -50,15 +50,21 @@ $.ajax({
     }
 });
 
-$(document).ready(function () {
-    $(".addToCartBtn").click(function () {
-        var productId = $(this).attr('data-product-id');
-        console.log("Product ID:", productId);
-
-        var cartProducts = localStorage.cartProducts ? JSON.parse(localStorage.cartProducts) : [];
-        cartProducts.push(productId);
-        localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-
-        alert('Item added to cart');
+$(document).ready(function(){
+    $("#wish-lists").click(function(){
+        var productId = $(this).attr('product');
+        console.log("product:",productId);
+        var wishListProducts = localStorage.wishList;
+        if(wishListProducts){
+            wishListProducts = JSON.parse(wishListProducts);
+            
+        }else{
+            wishListProducts = [];
+        }
+        wishListProducts.push($(this).attr('product'));
+        localStorage.setItem("wishList",JSON.stringify(wishListProducts));
+        alert('Item added to cart')
+        // $(".wishlist").fadeOut()
+        // $(".wishlist").replaceWith(("Remove from wishlist"))
     });
 });
