@@ -41,13 +41,13 @@
     </nav>
 
     <section class="container-fluid p-0 mt-5">
-                <div class="position-relative pt-5">
-                    <img src="./images/IMG_0382_460x.webp" alt="Image" class="img-fluid bk">
-                    <div class="overlay-text">
-                        <h2 class="pt-5">Indulge in a world of style and sophistication at our exclusive online shop.</h2>
-                        <p> Discover curated collections that blend fashion-forward trends with timeless elegance. From chic apparel to must-have accessories, elevate your wardrobe with our carefully selected pieces. Immerse yourself in a shopping experience that caters to your unique style.</p>
-                    </div>
-                </div>
+        <div class="position-relative pt-5">
+            <img src="./images/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdHAyMjktcG9zdGVyLTA1LTQ1Mi1wcy5qcGc.webp" alt="Image" class="img-fluid bk">
+            <div class="overlay-text">
+                <h2 class="pt-5 text-dark">Indulge in a world of style and sophistication at our exclusive online shop.</h2>
+                <p> Discover curated collections that blend fashion-forward trends with timeless elegance. From chic apparel to must-have accessories, elevate your wardrobe with our carefully selected pieces. Immerse yourself in a shopping experience that caters to your unique style.</p>
+            </div>
+        </div>
     </section>
 
     <section class="mt-5">
@@ -57,22 +57,70 @@
         </div>
     </section>
 
-    <footer class="container-fluid bg-dark text-light">
-        <div class=" justify-content-center align-items-center pt-5 pb-5">
-            <div class="">
-                <h5 class="text-center">FOLLOW US</h5>
-                <div class="dk_foot_icon d-flex justify-content-center">
-                    <div class="mx-2"><i class="fab fa-instagram"></i></div>
-                    <div class="mx-2"><i class="fab fa-youtube"></i></div>
-                    <div class="mx-2"><i class="fab fa-facebook"></i></div>
-                    <div class="mx-2"><i class="fab fa-twitter"></i></div>
-                    <div class="mx-2"><i class="fab fa-linkedin"></i></div>
-                    <div class="mx-2"><i class="fab fa-weixin"></i></div>
-                    <div class="mx-2"><i class="fas fa-search"></i></div>
-                </div>
-                
-            </div>
+    <section id="newArrivals mt-5">
+        <div class="custom-width-section pt-5">
+            <p  class="best-sellers mt-5">Sneakers</p>
+            <div class="row"  id="sneakerproducts"></div>
         </div>
+    </section>
+
+    <section id="loafers">
+        <div class="custom-width-section-2 mt-5">
+            <p class="best-sellers">Loafers</p>
+            <div class="row"  id="loafer-products"></div>
+        </div>
+    </section>
+
+    <section id="tops">
+        <div class="custom-width-section-2 mt-5">
+            <p class="best-sellers">Tops</p>
+            <div class="row"  id="products"></div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row py-4">
+            <div class="col-md-4 ">
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <div class="">
+                        <h5 class="text-left">Join Our Community</h5>
+                        <p>Be the first to get the latest updates on our promotion campaigns, products and services.</p>
+                    </div>
+                </div>                
+            </div> 
+
+            <div class="col-md-4 ">
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <form>
+                        <div class="form-group ">
+                            <input type="email" class="form-control bg-dark text-white" id="name" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn bg-dark text-white">Subscribe</button>
+                        </div>
+                    </form>
+                </div>               
+            </div> 
+
+            <div class="col-md-4">
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <div class="">
+                        <h5 class="text-center follow-us">FOLLOW US</h5>
+                        <div class="dk_foot_icon d-flex justify-content-center">
+                            <div class="mx-2"><i class="fab fa-instagram"></i></div>
+                            <div class="mx-2"><i class="fab fa-youtube"></i></div>
+                            <div class="mx-2"><i class="fab fa-facebook"></i></div>
+                            <div class="mx-2"><i class="fab fa-twitter"></i></div>
+                            <div class="mx-2"><i class="fab fa-linkedin"></i></div>
+                            <div class="mx-2"><i class="fab fa-weixin"></i></div>
+                            <div class="mx-2"><i class="fas fa-search"></i></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <hr>
+
         <div class="row py-4">
             <div class="col-md-3">
                 <h5>PRODUCTS</h5>
@@ -123,14 +171,15 @@
                 </ul>
             </div>
         </div>
-    
-       
     </footer>
     
 
     <script src="./jquery-3.6.1.min.js"></script>
     <script src="script.js"></script>
     <script src="shop.js"></script>
+    <script src="sneakers.js"></script>
+    <script src="men-loafers.js"></script>
+    <script src="top-wears.js"></script>
   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

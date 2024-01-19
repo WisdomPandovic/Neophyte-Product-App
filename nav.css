@@ -12,18 +12,12 @@
     background-color: #000 !important;
 }
 
-#navbar.navbar-light .navbar-nav .nav-link.text-white {
- 
-}
-
 .navbar-brand h1{
-  
     text-transform: uppercase;
 }
 
 .nav-link{
     text-transform: uppercase;
-   
     font-size: 12px;
     letter-spacing: 2px;
 }
@@ -34,21 +28,14 @@
     
 }
 
-#navbar .navbar-nav .nav-link {
-   
-}
-
 #navbar .navbar-nav .contact-link {
     background-color: transparent;
     border: 1px solid white;
- 
 }
 
 @media (max-width: 768px) {
-
     #navbar.navbar-light.bg-transparent {
         background-color: #A8A8A7 !important;
         color: #fff;
     }
-
 }

@@ -19,7 +19,6 @@ function render(data) {
     </div>`;
 }
 
-
 function load() {
     $.ajax({
         type: "GET",
@@ -50,7 +49,3 @@ function load() {
 }
 
 load();
-
-
-
-

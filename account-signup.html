@@ -2,16 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men Collections</title>
+    <title> Account SignUp</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="shop.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 <body>
-    
+
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top p-3">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -41,64 +41,46 @@
         </div>
     </nav>
 
-    <section class="image-grid-section mt-5">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <div class="image-grid-item">
-                        <img src="./images/Neophyte-garment-images (17).jpg" alt="Image 1" class="img-fluid">
-                        <a href="#tops" class="grid-link">Tops</a>
+    <div class="container mt-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-6 border rounded p-4 mt-5">
+                <div class="pt-5 signUp">
+                    <div class="signup-1">
+                        <div class="signin-1 pb-3">COMPLETE YOUR ACCOUNT CREATION</div>
+                        <div class="signin-2 pb-3">If you already have a NEOPHYTE account, please sign in. We'll use your existing details for a speedier checkout.</div>
                     </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="image-grid-item">
-                        <img src="./images/Neophyte-garment-images (12).jpg" alt="Image 2" class="img-fluid">
-                        <a href="#accessories" class="grid-link">Accessories</a>
-                    </div>
-                </div>  
-                <div class="col-md-3 mb-4">
-                    <div class="image-grid-item">
-                        <img src="./images/Neophyte-loafers (2).jpg" alt="Image 4" class="img-fluid">
-                        <a href="#loafers" class="grid-link">Loafers</a>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="image-grid-item">
-                        <img src="./images/IMG_0382_460x.webp" alt="Image 3" class="img-fluid">
-                        <a href="#newIn" class="grid-link">New In</a>
+
+                    <form class="signUp">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name*" id="firstname" class="form-control" required>
+                            <div class="errr" id="errr_fname"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Email Address*" id="email" class="form-control" required>
+                            <div class="errr" id="errr"></div> <div class="errr" id="errr_email"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Number*" id="phone_no" class="form-control" required>
+                            <div class="errr" id="errr_phone"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password*" id="password" class="form-control">
+                            <div id="err_msg" class="error"></div>
+                        </div>
+                        <div id="msg" class="errr"></div>
+                        <div class="text-center signup-1 d-flex justify-content-between">
+                            <button class="btn btn-primary signin-btn" id="signup_btn">SIGN IN</button>
+                            <a href="account-login.html">ALREADY HAVE AN ACCOUNT?</a>
+                        </div>
+                    </form>
+    
+                    <div class="">
+                        <div class="errr" id="errr_pwd"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="tops">
-        <div class="custom-width-section-2 mt-5">
-            <p class="best-sellers">Tops</p>
-            <div class="row"  id="products"></div>
-        </div>
-    </section>
-
-    <section id="accessories">
-        <div class="custom-width-section-2 mt-5">
-            <p class="best-sellers">Accessories</p>
-            <div class="row"  id="accessories-product"></div>
-        </div>
-    </section>
-
-    <section id="loafers">
-        <div class="custom-width-section-2 mt-5">
-            <p class="best-sellers">Loafers</p>
-            <div class="row"  id="loafer-products"></div>
-        </div>
-    </section>
-
-    <section id="newIn">
-        <div class="custom-width-section mt-5">
-            <p class="best-sellers">New In</p>
-            <div class="row"  id="newproducts"></div>
-        </div>
-    </section>
+    </div>
     
     <footer class="container-fluid bg-dark text-light">
         <div class="row py-4">
@@ -109,6 +91,7 @@
                         <p>Be the first to get the latest updates on our promotion campaigns, products and services.</p>
                     </div>
                 </div>
+                
             </div> 
 
             <div class="col-md-4 ">
@@ -120,9 +103,11 @@
                         </div>
                     </form>
                 </div>
+                
             </div> 
 
             <div class="col-md-4">
+
                 <div class=" justify-content-center align-items-center pt-5 pb-5">
                     <div class="">
                         <h5 class="text-center follow-us">FOLLOW US</h5>
@@ -135,6 +120,7 @@
                             <div class="mx-2"><i class="fab fa-weixin"></i></div>
                             <div class="mx-2"><i class="fas fa-search"></i></div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -192,25 +178,19 @@
                 </ul>
             </div>
         </div>
+    
+       
     </footer>
-
-    <script src="./jquery-3.6.1.min.js"></script>
-    <script src="script.js"></script>
-    <script src="women-wear.js"></script>
-    <script src="top-wears.js"></script>
-    <script src="accessories.js"></script>
-    <script src="new-arrival.js"></script>
-    <script src="men-loafers.js"></script>
-  
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./jquery-3.6.1.min.js"></script>
+<script src="script.js"></script>
+<script src="account-signup.js"></script>
 </body>
 </html>

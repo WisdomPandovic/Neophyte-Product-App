@@ -24,7 +24,7 @@ function load() {
     $.ajax({
         type: "GET",
         url: "http://159.65.21.42:9000/products",
-        dataType: "json", // Set the dataType to 'json'
+        dataType: "json",
         crossDomain: true,
         success: function (res) {
             let productsToShow = 8;
@@ -38,7 +38,6 @@ function load() {
                 }
             }
 
-            // Check if no products were found
             if (productsToShow === 8) {
                 $('#noAccessoriesMessage').html('<p>No products available at the moment.</p>');
             }

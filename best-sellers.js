@@ -20,7 +20,6 @@ function renderProduct(product) {
     `;
 }
 
-// Fetch data for the first product
 $.ajax({
     type: "GET",
     url: "http://159.65.21.42:9000/product/65a7c4e93b88d36925ae1c4b",
@@ -33,7 +32,6 @@ $.ajax({
     }
 });
 
-// Fetch data for the second product
 $.ajax({
     type: "GET",
     url: "http://159.65.21.42:9000/product/65a7b63e3b88d36925ae1c33",

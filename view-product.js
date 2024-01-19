@@ -38,7 +38,5 @@ $(document).ready(function(){
         wishListProducts.push($(this).attr('product'));
         localStorage.setItem("wishList",JSON.stringify(wishListProducts));
         alert('Item added to cart')
-        // $(".wishlist").fadeOut()
-        // $(".wishlist").replaceWith(("Remove from wishlist"))
     });
 });
