@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top p-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="text-secondary">Neophyte</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="men-collection.html">Men</a>
+                    <a class="nav-link" href="women-wear.html">Women</a>
+                    <a class="nav-link" href="sneakers.html">Sneakers</a>
+                    <a class="nav-link" href="#booking">Sales</a>
+                    <a class="nav-link" href="#blog">Blog</a>
+                    <a class="nav-link " href="shop.html">Shop</a>
+                </div>
+
+                <div class="my-2 my-lg-0 d-flex">
+                    <a class="nav-link mx-2" href="#" id="userLink"><i class="fas fa-user"></i> </a>
+                    <a class="nav-link " href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        User Information
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="./images/profile-photo.jpg" alt="User Image" class="rounded-image">
+                        <h5 class="card-title" id="userName"></h5>
+                        <p class="card-text" id="userEmail"></p>
+                        <p class="card-text" id="userPhone"></p>
+                        <p class="card-text" id="cartItems">Number of Cart Items: <span id="cartCount"></span></p>
+                        <button class="btn btn-danger" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-12 mt-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+            
+                        <div class="checkout-summary">
+                            <div class="subtotal d-flex justify-content-between list-group-item">
+                                <span class="summary-label">Subtotal</span>
+                                <span class="summary-value"></span>
+                            </div>
+                            <div class="discount d-flex justify-content-between pt-3">
+                                <span class="summary-label">Discount on Order</span>
+                                <span class="summary-value">-$200.00</span>
+                            </div>
+                            <div class="shipping d-flex justify-content-between pt-3">
+                                <span class="summary-label">Shipping & Handling for</span>
+                                <span class="summary-value">$0.00</span>
+                            </div>
+                        </div><hr>
+            
+                        <!-- Total -->
+                        <div class="total d-flex justify-content-between">
+                            <span class="summary-label">Total</span>
+                            <span class="summary-value"></span>
+                        </div>
+                        <button class="btn btn-success mt-3" onclick="checkout()">Checkout</button>
+                        <button class="btn btn-primary mt-3" ><a class="text-white text-decoration-none" href="shop.html">Continue Shopping</a></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row py-4">
+            <div class="col-md-4 ">
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <div class="">
+                        <h5 class="text-left">Join Our Community</h5>
+                        <p>Be the first to get the latest updates on our promotion campaigns, products and services.</p>
+                    </div>
+                </div>
+                
+            </div> 
+
+            <div class="col-md-4 ">
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <form>
+                        <div class="form-group ">
+                            <input type="email" class="form-control bg-dark text-white" id="name" placeholder="Your Email Address" required>
+                            <button type="submit" class="btn bg-dark text-white">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div> 
+
+            <div class="col-md-4">
+
+                <div class=" justify-content-center align-items-center pt-5 pb-5">
+                    <div class="">
+                        <h5 class="text-center follow-us">FOLLOW US</h5>
+                        <div class="dk_foot_icon d-flex justify-content-center">
+                            <div class="mx-2"><i class="fab fa-instagram"></i></div>
+                            <div class="mx-2"><i class="fab fa-youtube"></i></div>
+                            <div class="mx-2"><i class="fab fa-facebook"></i></div>
+                            <div class="mx-2"><i class="fab fa-twitter"></i></div>
+                            <div class="mx-2"><i class="fab fa-linkedin"></i></div>
+                            <div class="mx-2"><i class="fab fa-weixin"></i></div>
+                            <div class="mx-2"><i class="fas fa-search"></i></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <hr>
+
+        <div class="row py-4">
+            <div class="col-md-3">
+                <h5>PRODUCTS</h5>
+                <ul class="list-unstyled">
+                    <li>T-shirts</li>
+                    <li>Sneakers</li>
+                    <li>Caps</li>
+                    <li>Jewelry</li>
+                    <li>Hybrid</li>
+                    <li>Classic</li>
+                    <li>Never Still</li>
+                    <li>Personal</li>
+                </ul>
+            </div>
+    
+            <div class="col-md-3">
+                <h5>NEOPHYTE</h5>
+                <ul class="list-unstyled">
+                    <li>Our Story</li>
+                    <li>Careers</li>
+                    <li>Catalogue</li>
+                    <li>News</li>
+                    <li>Corporate gifts</li>
+                </ul>
+            </div>
+    
+            <div class="col-md-3">
+                <h5>SUPPORT</h5>
+                <ul class="list-unstyled">
+                    <li>Contact Us</li>
+                    <li>Create an Account</li>
+                    <li>FAG</li>
+                    <li>Register my NEOPHYTE</li>
+                    <li>Return my product</li>
+                    <li>Track orders</li>
+                </ul>
+            </div>
+    
+            <div class="col-md-3">
+                <h5>LEGAL</h5>
+                <ul class="list-unstyled">
+                    <li>Data protection</li>
+                    <li>Terms & Conditions</li>
+                    <li>Return policy</li>
+                    <li>Imprint</li>
+                    <li>Cookie Policy</li>
+                    <li>Cookie Management</li>
+                </ul>
+            </div>
+        </div>
+    </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="isloggedin.js"></script>
+    <script src="cart-items.js"></script>
+    <script src="checkout.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const userData = JSON.parse(localStorage.getItem('user'));
+            const wishList = JSON.parse(localStorage.getItem('wishList')) || [];
+
+            document.getElementById('userName').textContent = `Name: ${userData.name}`;
+            document.getElementById('userEmail').textContent = `Email: ${userData.email}`;
+            document.getElementById('userPhone').textContent = `Phone: ${userData.phone}`;
+            document.getElementById('cartCount').textContent = wishList.length;
+
+            document.getElementById('logoutBtn').addEventListener('click', function () {
+                // Remove user data from local storage
+                localStorage.removeItem('user');
+                // Redirect to the login page (replace 'login.html' with your actual login page)
+                window.location.href = 'account-login.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

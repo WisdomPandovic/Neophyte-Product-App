@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.rounded-image {
+    width: 200px;
+    height: 200px;  
+    object-fit: cover;
+    border-radius: 50%;
+}

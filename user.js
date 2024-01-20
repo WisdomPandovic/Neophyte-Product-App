@@ -1,5 +1,11 @@
-  // Assuming you have some way to determine if the user is signed in, e.g., a variable called isUserSignedIn
-  const isUserSignedIn = /* Your logic to check if the user is signed in */;
+const isUserSignedIn = () => {
+    // Retrieve user information from local storage
+    const userData = JSON.parse(localStorage.getItem('user'));
+
+    // Check if user information exists
+    return userData !== null && userData !== undefined;
+};
+
 
   document.addEventListener('DOMContentLoaded', function() {
       const userLink = document.getElementById('userLink');
@@ -14,9 +20,6 @@
               window.location.href = 'user-page.html';
           } else {
               window.location.href = 'account-signup.html';
-              // You can also add additional logic or prevent the default behavior if needed
-              // For example, prevent the default behavior to handle redirection in your own logic
-              // event.preventDefault();
           }
       });
   });
