@@ -314,6 +314,10 @@ form button {
     font-size: 13px;
   }
 
+  .copyright H2{
+    font-size: 1em;
+  }
+
 @media (max-width: 768px) {
     .about-brand h2 {
         font-size: 2em;

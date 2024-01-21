@@ -56,40 +56,60 @@
                         <h5 class="card-title" id="userName"></h5>
                         <p class="card-text" id="userEmail"></p>
                         <p class="card-text" id="userPhone"></p>
-                        <p class="card-text" id="cartItems">Number of Cart Items: <span id="cartCount"></span></p>
+                        <!-- <p class="card-text" id="cartItems">Number of Cart Items: <span id="cartCount"></span></p> -->
                         <button class="btn btn-danger" id="logoutBtn">Logout</button>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-9 col-md-12 mt-4">
-                <div class="card mb-4">
+                <div class="card mt-5 mb-4">
                     <div class="card-body">
-            
+                        <div class="subtotal d-flex justify-content-between list-group-item">
+                        <p class="font-weight-bold card-text" id="cartItems">Number of Cart Items: </p>
+                        <span id="cartCount"></span>
+                        </div>
                         <div class="checkout-summary">
                             <div class="subtotal d-flex justify-content-between list-group-item">
-                                <span class="summary-label">Subtotal</span>
+                                <span class="summary-label font-weight-bold">Subtotal</span>
                                 <span class="summary-value"></span>
                             </div>
                             <div class="discount d-flex justify-content-between pt-3">
-                                <span class="summary-label">Discount on Order</span>
+                                <span class="summary-label font-weight-bold">Discount on Order</span>
                                 <span class="summary-value">-$200.00</span>
                             </div>
                             <div class="shipping d-flex justify-content-between pt-3">
-                                <span class="summary-label">Shipping & Handling for</span>
+                                <span class="summary-label font-weight-bold">Shipping & Handling for</span>
                                 <span class="summary-value">$0.00</span>
                             </div>
                         </div><hr>
             
                         <!-- Total -->
                         <div class="total d-flex justify-content-between">
-                            <span class="summary-label">Total</span>
+                            <span class="summary-label font-weight-bold">Total</span>
                             <span class="summary-value"></span>
                         </div>
                         <button class="btn btn-success mt-3" onclick="checkout()">Checkout</button>
                         <button class="btn btn-primary mt-3" ><a class="text-white text-decoration-none" href="shop.html">Continue Shopping</a></button>
                     </div>
                 </div>
+
+                <!-- <div class="container mt-4">
+                    <div class="card">
+                      <div class="card-header">
+                        Shipment Tracking
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Order #123456</h5>
+                        <p class="card-text">Your order is on its way! Track its progress using the provided tracking number.</p>
+                        <ul class="list-group">
+                          <li class="list-group-item"><strong>Carrier:</strong> Example Shipping</li>
+                          <li class="list-group-item"><strong>Tracking Number:</strong> ABC123XYZ456</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-3">Track Shipment</a>
+                      </div>
+                    </div>
+                </div> -->
             </div>
             
         </div>
@@ -191,7 +211,12 @@
                 </ul>
             </div>
         </div>
-    </footer>  
+    </footer> 
+    
+    <div class="bg-dark copyright text-center text-white">
+        <h2>@2024 NEOPHYTE GARMENT | All Right Reserved</h2>
+        <p class="pb-2">Developed & Maintained by Panda</p>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  
@@ -229,6 +254,15 @@
                 window.location.href = 'account-login.html';
             });
         });
+    </script>
+
+<script>
+    function checkout() {
+      // Replace this alert with actual payment gateway integration logic
+      // For demonstration purposes, this will just show an alert
+      alert("Redirecting to payment gateway for payment processing...");
+      // You would typically redirect to a secure payment page or show a modal for payment details
+    }
     </script>
 </body>
 

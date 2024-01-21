@@ -56,18 +56,33 @@ $(document).on("click", ".cart-delete", function(){
     }
 });
 
-function updateLocalStorage(id) {
+function updateLocalStorage(productId, callback) {
     // Get the existing wishList from local storage
     let wishListProducts = localStorage.getItem('wishList');
 
     if (wishListProducts) {
         wishListProducts = JSON.parse(wishListProducts);
 
-        // Filter out the product with the specified ID
-        wishListProducts = wishListProducts.filter(product => product.id !== id);
+        // Find the index of the product with the specified ID
+        let productIndex = wishListProducts.findIndex(product => product.id === productId);
 
-        // Save the updated wishList to local storage
-        localStorage.setItem("wishList", JSON.stringify(wishListProducts));
+        if (productIndex !== -1) {
+            // Product found, remove it from the array
+            wishListProducts.splice(productIndex, 1);
 
+            // Save the updated wishList to local storage
+            localStorage.setItem("wishList", JSON.stringify(wishListProducts));
+
+            // Update the UI immediately (replace this with your actual UI update logic)
+            $("#products").empty();
+            loadProductsFromLocalStorage();
+
+            // Call the callback with true for successful removal
+            callback(true);
+            return; // Successful removal
+        }
     }
+
+    // Call the callback with false for failed removal
+    callback(false);
 }

@@ -22,7 +22,7 @@ function renderProduct(product) {
 
 $.ajax({
     type: "GET",
-    url: "http://159.65.21.42:9000/product/65a7c4e93b88d36925ae1c4b",
+    url: "http://159.65.21.42:9000/product/65abf4743b88d36925ae237a",
     success: function (productData) {
         let html = renderProduct(productData);
         $('#productContainer').append(html);

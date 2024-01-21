@@ -1,46 +1,3 @@
-// function load (id){
-//     $.ajax({
-//         type:"get",
-//         url:"http://159.65.21.42:9000/product/"+id,
-//         success:function(res){
-//             $(".shop-p1x").html(res.name)
-//             $(".shop-p2x").html(res.description)
-//             $(".amt").html(res.price)
-//             $(".img").attr("src", "http://159.65.21.42:9000"+res.image)
-//             console.log("arr: ", res);
-//         },
-//         error:function(err){
-//             console.log(err)
-//         }
-//     })
-//     $("#wish-list").attr("product",id);
-
-//     $(".wishlist").attr("product",id);
-// }
-
-// let url = location.href
-// let arr = url.split("=")
-// load(arr[1])
-
-
-
-// $(document).ready(function(){
-//     $("#wish-list").click(function(){
-//         var productId = $(this).attr('product');
-//         console.log("product:",productId);
-//         var wishListProducts = localStorage.wishList;
-//         if(wishListProducts){
-//             wishListProducts = JSON.parse(wishListProducts);
-            
-//         }else{
-//             wishListProducts = [];
-//         }
-//         wishListProducts.push($(this).attr('product'));
-//         localStorage.setItem("wishList",JSON.stringify(wishListProducts));
-//         alert('Item added to cart')
-//     });
-// });
-
 function load(id) {
     $.ajax({
         type: "get",
@@ -65,7 +22,6 @@ let url = location.href
 let arr = url.split("=")
 load(arr[1])
 
-
 $(document).ready(function () {
     $("#wish-list").click(function () {
         // Get the product ID from the #wish-list element
@@ -81,7 +37,6 @@ $(document).ready(function () {
             name: $(".shop-p1x").html(),
             description: $(".shop-p2x").html(),
             price: $(".amt").html(),
-            // Add other details as needed
         };
 
         // Get the existing wishList from local storage
@@ -89,15 +44,30 @@ $(document).ready(function () {
 
         if (wishListProducts) {
             wishListProducts = JSON.parse(wishListProducts);
-        } else {
-            wishListProducts = [];
-        }
 
-        // Push the entire product details to the array
-        wishListProducts.push(productDetails);
+            // Check if the product with the same ID is already in the wish list
+            var existingProductIndex = wishListProducts.findIndex(product => product.id === productId);
+
+            if (existingProductIndex !== -1) {
+                // Product with the same ID already exists, show an alert
+                alert('Item already in cart');
+            } else {
+                // Product is not in the wish list, add a new entry
+                productDetails.quantity = 1; // Add quantity property
+                wishListProducts.push(productDetails);
+            }
+
+        } else {
+            // Wish list is empty, add the first product entry
+            wishListProducts = [productDetails];
+        }
 
         // Save the updated wishList to local storage
         localStorage.setItem("wishList", JSON.stringify(wishListProducts));
-        alert('Item added to cart');
+
+        // Display appropriate alert message
+        if (existingProductIndex === -1) {
+            alert('Item added to cart');
+        }
     });
 });

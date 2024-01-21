@@ -29,7 +29,7 @@ const calculateSubtotal = () => {
 
 // Function to update the checkout summary
 const updateCheckoutSummary = () => {
-    const discount = 200.00; // You can set the discount amount dynamically or as needed
+    const discount = 7000.00; // You can set the discount amount dynamically or as needed
 
     // Get the elements for subtotal, discount, and total
     const subtotalElement = document.querySelector('.subtotal .summary-value');
