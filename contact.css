@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-text h2{
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.contact-text p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact-forms {
+    border: 1px solid black;
+    padding: 50px 50px 0px;
+}
+
+.contact-forms input {
+    width: 100%;
+    padding: 15px ;
+    margin-bottom: 15px;
+    border-top: none !important;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid black !important;
+    border-radius: 3px;
+    color: #000;
+    font-size: 14px;
+}
+
+textarea{
+    width: 100%; 
+    color: #000;
+    padding: 15px;
+}
+
+.contact-forms button {
+    width: 100%;
+    padding: 15px ;
+    background-color: black;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Reset the focus styles for all form elements */
+.contact-forms input:focus,
+.contact-forms textarea:focus,
+.contact-forms button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Specify the focus styles for each input type */
+.contact-forms input[type="text"]:focus,
+.contact-forms input[type="email"]:focus,
+.contact-forms textarea:focus,
+.contact-forms button:focus {
+    border-bottom: 1px solid black !important;
+}
+
+
+
+.bk-smoke{
+    background-color: whitesmoke;
+}
+
+.two-column-section{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: whitesmoke;
+}
+
+.bg-darker{
+    background-color: #A8BF95;
+}
+
+.grid-column img {
+    width: 100%;
+    height: 700px; 
+    object-fit: cover; 
+}
+
+.image-containers {
+    position: relative;
+}
+
+.overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.link-text {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+@media (max-width: 576px) {
+    .contact-section{
+        margin: 30px 0 40px;
+    }
+    .contact-text h2{
+        font-size: 30px;
+    }
+
+    .contact-text p{
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+   
+}

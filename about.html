@@ -2,12 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>About Neophyte Garment</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">  
-    <link rel="stylesheet" href="nav.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">  
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -29,7 +30,7 @@
                     <a class="nav-link" href="sneakers.html">Sneakers</a>
                     <a class="nav-link " href="shop.html">Shop</a>
                     <a class="nav-link" href="#blog">Blog</a>
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.html">About</a>   
                 </div>
 
                 <div class="my-2 my-lg-0 d-flex">
@@ -39,30 +40,100 @@
             </div>
         </div>
     </nav>
+
+    <div class="about-image-section">
+        <img src="./images/Neophyte-garment-images (12).jpg" alt="Background Image" class="img-fluid">
+        <div class="about-overlay">
+            <h2 class="text-center pt-5">About</h2>
+            <p class="">Neophyte Garments embody the spirit of a new era on the African continent, a vibrant energy that rises above cultural boundaries, unmistakably reflected in our values. Crafted with boundless affection and innate creative skill, these designs intertwine with fashion, meant to be embraced as a part of daily life by those who exude self-assured excellence and even those aspiring to do so.</p>
+        </div>
+    </div>
+
+    <section class="two-column-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 contact-text">
+                    <h2>Have questions regarding our Product?</h2>
+                    <p>If you have any questions or if you'd like to share your experience with us, feel free to send us a message using the form below. We're here to help!</p>
+                   <p>For our latest experiences and editorials, be the first in the know. You'll learn about upcoming product shipment worldwide and the secrets and lifestyle of our customers.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-form">
+                        <h4 class="text-center">Send Us a message</h4>
+                        <form action="#" method="post" class="contact-forms">
+                            <!-- <label for="name">Name</label> -->
+                            <input type="text" id="name" name="name" required placeholder="Enter name">
     
-    <div class="center-content mt-5">
-        <div class="wishl-con">
-            <div class="wishl-cont text-center ">
-                <div class="wishl-con1 pt-5">
-                    <p>Your wishlist (<span id="wishListNum">0</span>)</p>
-                </div>
+                            <!-- <label for="email">Email</label> -->
+                            <input type="email" id="email" name="email" required placeholder="Enter email address">
 
-                <div class="wishl-con2">
-                    <p>Add items to your wishlist to view or compare them later. </p>
+                            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+    
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="wishl-con3">
-                    <button class="btn btn-dark">START SHOPPING</button>
+    <div class="container-fluid pt-5 bg-darker text-white">
+        <div class="row justify-content-center pt-5 pb-5">
+            <div class="col-md-6">
+                <div class="text-center mb-4">
+                    <h2>Welcome to Neophyte Garments</h2>
+                    <p>Enter your email below to receive a 10% discount!</p>
                 </div>
+                
+                <form>
+                    <div class="mb-3">
+                        <div class="form-group d-flex justify-content-between">
+                            <!-- <label for="email" class="form-label">Email address</label> -->
+                            <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="First Name" required>
+                            <div style="width: 10px;"></div> 
+                            <!-- <label for="email" class="form-label">Email address</label> -->
+                            <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Last Name" required>
+                        </div>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-black w-100 border-none">Subscribe</button>
+                </form>
             </div>
         </div>
     </div>
 
-    <section >
-        <div class="custom-width-section mt-5">
-            <div class="row"  id="products"></div>
+    <div class="bk-smoke">
+        <div class="text-center pt-5"><h3>Shop Now</h3></div>
+
+        <div class="container">
+        <div class="row pt-5 pb-5">
+            <!-- First div -->
+            <div class="col-md-6">
+                <div class="image-containers">
+                    <div class="grid-column">
+                        <img src="./images/Neophyte-garment-images (1).webp" alt="First Image" class="img-fluid">
+                    </div>
+                    <div class="overlays">
+                        <a href="men-collection.html" class="link-text">Men Collection</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="image-containers">
+                    <div class="grid-column">
+                        <img src="./images/Neophyte-garment-images (5).jpg" alt="Second Image" class="img-fluid">
+                    </div>
+                    <div class="overlays">
+                        <a href="women-wear.html" class="link-text">Women Collection</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        </div>
+    </div>
 
     <footer class="container-fluid bg-dark text-light">
         <div class="row py-4">
@@ -73,7 +144,6 @@
                         <p>Be the first to get the latest updates on our promotion campaigns, products and services.</p>
                     </div>
                 </div>
-                
             </div> 
 
             <div class="col-md-4 ">
@@ -85,11 +155,9 @@
                         </div>
                     </form>
                 </div>
-                
             </div> 
 
             <div class="col-md-4">
-
                 <div class=" justify-content-center align-items-center pt-5 pb-5">
                     <div class="">
                         <h5 class="text-center follow-us">FOLLOW US</h5>
@@ -102,11 +170,9 @@
                             <div class="mx-2"><i class="fab fa-weixin"></i></div>
                             <div class="mx-2"><i class="fas fa-search"></i></div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-        
         </div>
         <hr>
 
@@ -160,16 +226,24 @@
                 </ul>
             </div>
         </div>
-    
-       
     </footer>
 
     <div class="bg-dark copyright text-center text-white">
         <h2>@2024 NEOPHYTE GARMENT | All Right Reserved</h2>
         <p class="pb-2">Developed & Maintained by Panda</p>
     </div>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script src="best-sellers.js"></script>
+    <script src="new-arrival.js"></script>
+    <script src="instore.js"></script>
+    <script src="user.js"></script>
+    <script src="isloggedin.js"></script>
+    <script src="cart-items.js"></script>
   
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -179,13 +253,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./jquery-3.6.1.min.js"></script>
-    <script src="script.js"></script>
-
-    <script src="./jquery-3.6.1.min.js"></script>
-    <script src="script.js"></script>
-    <script src="add-to-cart.js"></script>
-    <script src="isloggedin.js"></script>
-    <script src="cart-items.js"></script>
 </body>
 </html>
