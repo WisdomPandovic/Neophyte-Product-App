@@ -3,7 +3,6 @@ function render(data) {
         <a href="view-product.html?q=${data._id}">
             <div class="h-100">
                 <img src="${'http://159.65.21.42:9000' + data.image}" class="img-fluid rounded-4 product-image" alt="Service 1">
-                <i class="fas fa-heart heart-icon"></i>
                 <div class="d-flex justify-content-between card-body p-3">
                     <div class="">
                         <p class="card-text overflow-hidden mt-2">${data.name}</p>
