@@ -33,6 +33,16 @@
     border: 1px solid white;
 }
 
+.hoverable-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hoverable-dropdown .dropdown-menu {
+    display: none;
+}
+
+
+
 @media (max-width: 768px) {
     #navbar.navbar-light.bg-transparent {
         background-color: #A8A8A7 !important;

@@ -362,6 +362,11 @@ form button {
     text-decoration: none; 
 }
 
+.fixed-height {
+    width: 100%;
+    height: 200px; 
+  }
+  
 
 @media (max-width: 768px) {
     .about-brand h2 {
@@ -380,5 +385,11 @@ form button {
         display: flex !important;
         justify-content: left !important;
         text-align: left;
+    }
+}
+
+@media (max-width: 358px) {
+    .best-sellers {
+        font-size: 1.5em;
     }
 }

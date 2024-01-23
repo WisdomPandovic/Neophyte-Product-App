@@ -2,12 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Product</title>
+    <title>Swim Suit Collections</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">  
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
 
@@ -34,14 +35,13 @@
                             Collections
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="swim-suit.html">Swim Suit</a>
+                            <a class="dropdown-item" href="#">Swim Suit</a>
                             <a class="dropdown-item" href="#">Category 2</a>
                             <a class="dropdown-item" href="#">Category 3</a>
                         </div>
                     </div>
-                    
                     <a class="nav-link" href="#blog">Blog</a>
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.html">About</a>   
                 </div>
 
                 <div class="my-2 my-lg-0 d-flex">
@@ -52,41 +52,105 @@
         </div>
     </nav>
 
-    <div class="container text-center mt-5">
-        <img src="" alt="Product Image" class="img-fluid mt-5 img">
-        <div class="mt-5">
-            <h2 class="shop-p1x"></h2>
-            <p class="amt">₦ </p>
-            <button class="btn btn-primary text-uppercase custom-add-to-cart rounded-0" id="wish-list">Add to Cart</button>
-        </div>
-    </div>
+    <section class="container-fluid p-0 mt-5">
+        <div class="position-relative pt-5">
+            <img src="./images/swimsuit-gals.jpg" alt="Image" class="img-fluid bk">
+            <div class="overlay-text">
+                <h2 class="pt-5 text-white">Introducing our exquisite one-piece swimsuit collection, where elegance meets versatility. </h2>
+                <p> Dive into a world of style with our stunning swimsuits that redefine beach glamour. Whether you're basking in the sun or making a splash, our one-piece swimsuits offer the perfect blend of comfort, fashion, and confidence.
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="border p-3">
-                    <h3>Additional Information</h3>
-                    <p class="shop-p2x"></p>
-                    <p>Shipping calculated at checkout.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="border p-3">
-                    <h3>Customer Reviews</h3>
-                    <p>Reviews and comments from customers.</p>
-                </div>
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section id="newArrivals">
-        <div class="custom-width-section mt-5">
-            <p  class="best-sellers">New Arrivals</p>
-            <div class="row"  id="newproducts"></div>
+    <section class="image-grid-section mt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="image-grid-item">
+                        <img src="./images/NeophyteGarment-SwimSuit-one-piece  (3).webp" alt="Image 1" class="img-fluid">
+                        <a href="#onepiece" class="grid-link">One Piece</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="image-grid-item">
+                        <img src="./images/NeophyteGarment-SwimSuit-one-piece  (1).jpg" alt="Image 2" class="img-fluid">
+                        <a href="#twopiece" class="grid-link">Two Piece Swim Suit</a>
+                    </div>
+                </div>  
+                <div class="col-md-4 mb-4">
+                    <div class="image-grid-item">
+                        <img src="./images/men-swimsuit.jpg" alt="Image 4" class="img-fluid">
+                        <a href="#menswimsuit" class="grid-link">Men Swim Suit</a>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 mb-4">
+                    <div class="image-grid-item">
+                        <img src="./images/IMG_0382_460x.webp" alt="Image 3" class="img-fluid">
+                        <a href="#newIn" class="grid-link">New In</a>
+                    </div>
+                </div> -->
+            </div>
         </div>
     </section>
     
+    <section class="mt-5" id="onepiece">
+        <div class="custom-width-section pt-5">
+            <p  class="best-sellers">One Piece Swim Suit</p>
+            <div class="row"  id="swimsuitproducts"></div>
+        </div>
+    </section>
+
+    <section class="mt-5" id="twopiece">
+        <div class="custom-width-section pt-5">
+            <p  class="best-sellers">Two Piece Swim Suit</p>
+            <div class="row"  id="twoPieceSwimsuitProducts"></div>
+        </div>
+    </section>
+
+    <!-- <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad.webp" alt="Image 1" class="img-fluid fixed-height">
+          </div>
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad-2.webp" alt="Image 2" class="img-fluid fixed-height">
+          </div>
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad-3.webp" alt="Image 3" class="img-fluid fixed-height">
+          </div>
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad-4.webp" alt="Image 4" class="img-fluid fixed-height">
+          </div>
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad-5.webp" alt="Image 5" class="img-fluid fixed-height">
+          </div>
+          <div class="col-md-2">
+            <img src="./images/swimsuit-ad-5.webp" alt="Image 5" class="img-fluid fixed-height">
+          </div>
+        </div>
+    </div> -->
+    
+    <div class="container-fluid py-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-126 mb-1">
+            <img src="./images/swimsuit-ad.webp" alt="Image 1" class="img-fluid fixed-height">
+          </div>
+          <div class="col-lg-6 col-md-12 mb-1">
+            <img src="./images/swimsuit-ad-2.webp" alt="Image 2" class="img-fluid fixed-height">
+          </div>
+        </div>
+    </div>
+
+    <section class="mt-1" id="menswimsuit">
+        <div class="custom-width-section pt-5">
+            <p  class="best-sellers">Men Swim Suit</p>
+            <div class="row"  id="menswimsuitproducts"></div>
+        </div>
+    </section>
+      
+
     <footer class="container-fluid bg-dark text-light">
         <div class="row py-4">
             <div class="col-md-4 ">
@@ -95,8 +159,7 @@
                         <h5 class="text-left">Join Our Community</h5>
                         <p>Be the first to get the latest updates on our promotion campaigns, products and services.</p>
                     </div>
-                </div>
-                
+                </div>                
             </div> 
 
             <div class="col-md-4 ">
@@ -107,12 +170,10 @@
                             <button type="submit" class="btn bg-dark text-white">Subscribe</button>
                         </div>
                     </form>
-                </div>
-                
+                </div>               
             </div> 
 
             <div class="col-md-4">
-
                 <div class=" justify-content-center align-items-center pt-5 pb-5">
                     <div class="">
                         <h5 class="text-center follow-us">FOLLOW US</h5>
@@ -189,7 +250,7 @@
         <h2>@2024 NEOPHYTE GARMENT | All Right Reserved</h2>
         <p class="pb-2">Developed & Maintained by Panda</p>
     </div>
-  
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -199,12 +260,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="./jquery-3.6.1.min.js"></script>
     <script src="script.js"></script>
-    <script src="view-product.js"></script>
-    <script src="new-arrival.js"></script>
+    <script src="onePiece-swimsuit.js"></script>
+    <script src="twoPiece-swimsuit.js"></script>
+    <script src="men-swimsuit.js"></script>
     <script src="isloggedin.js"></script>
-    <script src="cart-items.js"></script>
 </body>
 </html>

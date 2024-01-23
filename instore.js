@@ -21,7 +21,7 @@ function renderProducts(inStoreproduct) {
                 <option value="green">Green</option>
             </select>
         </div>
-        <button class="btn btn-primary btn-block addToCartBtn" id="wish-lists">Add to Cart</button>
+        <button class="btn btn-primary btn-block addToCartBtn" data-product-id="${inStoreproduct._id}">Add to Cart</button>
     </div>
     `;
 }
@@ -51,18 +51,27 @@ $.ajax({
 });
 
 $(document).ready(function(){
-    $("#wish-lists").click(function(){
-        var productId = $(this).attr('product');
-        console.log("product:",productId);
-        var wishListProducts = localStorage.wishList;
-        if(wishListProducts){
-            wishListProducts = JSON.parse(wishListProducts);
-            
-        }else{
-            wishListProducts = [];
+    $('#productDetails').on('click', '.addToCartBtn', function () {
+        var productId = $(this).data('product-id');
+        console.log("Product ID:", productId);
+        // Check if the product is already in the cart
+        var wishListProducts = localStorage.wishList ? JSON.parse(localStorage.wishList) : [];
+        var existingProductIndex = wishListProducts.findIndex(product => product.id === productId);
+
+        if (existingProductIndex !== -1) {
+            // Product with the same ID already exists in the cart, show an alert
+            alert('Item already in cart');
+        } else {
+            // Product is not in the cart, add it
+            var productDetails = {
+                id: productId,
+                name: $(".shop-p1x").html(),
+                description: $(".shop-p2x").html(),
+                price: $(".amt").html(),
+            };
+            wishListProducts.push(productDetails);
+            localStorage.setItem("wishList", JSON.stringify(wishListProducts));
+            alert('Item added to cart');
         }
-        wishListProducts.push($(this).attr('product'));
-        localStorage.setItem("wishList",JSON.stringify(wishListProducts));
-        alert('Item added to cart')
     });
 });

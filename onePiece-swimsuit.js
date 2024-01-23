@@ -3,6 +3,7 @@ function render(data) {
         <a href="view-product.html?q=${data._id}">
             <div class="h-100">
                 <img src="${'http://159.65.21.42:9000' + data.image}" class="img-fluid rounded-4 product-image" alt="Service 1">
+                <i class="fas fa-heart heart-icon"></i>
                 <div class="d-flex justify-content-between card-body p-3">
                     <div class="">
                         <p class="card-text overflow-hidden mt-2">${data.name}</p>
@@ -31,9 +32,9 @@ function load() {
 
             for (let i = res.length - 1; i >= 0 && productsToShow > 0; i--) {
                 let d = res[i];
-                if (d.category == "Neophytegarments") {
+                if (d.category == "Neophytegarment-SwimSuit") {
                     let html = render(d);
-                    $('#newproducts').append(html);
+                    $('#swimsuitproducts').append(html);
                     productsToShow--;
                 }
             }
